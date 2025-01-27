@@ -1,5 +1,6 @@
 [
-  { "id": 1, "name": "John Doe", "age": 30, "salary": 50000, "address": "123 Main St" },
-  { "id": 2, "name": "Jane Smith", "age": 25, "salary": 60000, "address": "456 Oak St" },
-  { "id": 3, "name": "Jim Brown", "age": 40, "salary": 70000, "address": "789 Pine St" }
-]
+    { "id": 1, "name": "John Doe", "salary": 50000, "address": "123 Street, City", "age": 30 },
+    { "id": 2, "name": "Jane Smith", "salary": 55000, "address": "456 Avenue, City", "age": 28 },
+    { "id": 3, "name": "Sam Brown", "salary": 60000, "address": "789 Boulevard, City", "age": 35 }
+  ]
+  
