@@ -12,13 +12,20 @@ const getData = () => {
 
 // This is the serverless function handler
 module.exports = (req, res) => {
-  const id = parseInt(req.query.id); // Access the 'id' parameter from the URL query string
+  const id = req.query.id ? parseInt(req.query.id) : null; // Check if 'id' is provided
   const data = getData();
-  const filteredData = data.filter(item => item.id === id);
+  
+  if (id) {
+    // If 'id' is provided, filter the data by id
+    const filteredData = data.filter(item => item.id === id);
 
-  if (filteredData.length > 0) {
-    res.status(200).json(filteredData[0]);
+    if (filteredData.length > 0) {
+      res.status(200).json(filteredData[0]);
+    } else {
+      res.status(404).json({ error: 'Data not found' });
+    }
   } else {
-    res.status(404).json({ error: 'Data not found' });
+    // If 'id' is not provided, return all the data
+    res.status(200).json(data);
   }
 };
