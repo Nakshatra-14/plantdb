@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 2000;
+const port = process.env.PORT || 3000;
 
 // Path to the JSON file
 const dataFilePath = path.join(__dirname, 'data', 'data.json');
