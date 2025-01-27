@@ -1,45 +1,5 @@
 [
-    {
-      "id": 1,
-      "name": "Product A",
-      "price": 100,
-      "stock": 50
-    },
-    {
-      "id": 2,
-      "name": "Product B",
-      "price": 150,
-      "stock": 30
-    },
-    {
-      "id": 3,
-      "name": "Product C",
-      "price": 200,
-      "stock": 20
-    },
-    {
-      "id": 4,
-      "name": "Product D",
-      "price": 2000,
-      "stock": 200
-    },
-    {
-      "id": 5,
-      "name": "Product B",
-      "price": 150,
-      "stock": 30
-    },
-    {
-      "id": 6,
-      "name": "Product C",
-      "price": 200,
-      "stock": 20
-    },
-    {
-      "id": 7,
-      "name": "Product D",
-      "price": 2000,
-      "stock": 200
-    }
-  ]
-  
+  { "id": 1, "name": "John Doe", "age": 30, "salary": 50000, "address": "123 Main St" },
+  { "id": 2, "name": "Jane Smith", "age": 25, "salary": 60000, "address": "456 Oak St" },
+  { "id": 3, "name": "Jim Brown", "age": 40, "salary": 70000, "address": "789 Pine St" }
+]
