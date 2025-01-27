@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "seedName": "Basil",
+    "scientificName": "Ocimum basilicum",
+    "soilType": "Well-drained soil",
+    "waterRequirements": "Moderate",
+    "sunlight": "Full sun",
+    "nutrients": ["Nitrogen", "Phosphorus"],
+    "careTips": "Water when the top inch of soil feels dry.",
+    "qrCodeUrl": "https://example.com/basil"
+  },
+  {
+    "id": 2,
+    "seedName": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "soilType": "Loamy soil",
+    "waterRequirements": "High",
+    "sunlight": "Full sun",
+    "nutrients": ["Potassium", "Calcium"],
+    "careTips": "Stake plants to support growth.",
+    "qrCodeUrl": "https://example.com/tomato"
+  }
+]
