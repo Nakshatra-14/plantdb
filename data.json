@@ -18,10 +18,10 @@
       "stock": 20
     },
     {
-        "id": 4,
-        "name": "Product D",
-        "price": 2000,
-        "stock": 200
+      "id": 4,
+      "name": "Product D",
+      "price": 2000,
+      "stock": 200
     }
   ]
   
