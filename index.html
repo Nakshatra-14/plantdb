@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Specific Product</title>
+</head>
+<body>
+  <h1>Product Information</h1>
+  <div id="product-details"></div>
+
+  <script>
+    // Function to get the query parameter (ID) from the URL
+    function getQueryParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Fetch the data from the JSON file
+    fetch('https://yourwebsite.com/data.json') // Replace with your file's URL
+      .then(response => response.json())  // Parse the JSON data
+      .then(data => {
+        // Get the ID from the URL
+        const productId = getQueryParameter('id');
+        
+        // Find the product with the given ID
+        const product = data.find(item => item.id == productId);
+        
+        // Display the product information if found
+        const productDetails = document.getElementById('product-details');
+        if (product) {
+          productDetails.innerHTML = `
+            <h2>${product.name}</h2>
+            <p>Price: $${product.price}</p>
+            <p>Stock: ${product.stock}</p>
+          `;
+        } else {
+          productDetails.innerHTML = '<p>Product not found.</p>';
+        }
+      })
+      .catch(error => console.log('Error fetching data:', error));
+  </script>
+</body>
+</html>
